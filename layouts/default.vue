@@ -1,9 +1,6 @@
 <script setup lang="ts">
 
-const { page, globals } = useContent()
-
-console.log(globals.value);
-
+const { page } = useContent()
 
 useContentHead({
     title: page.value.title ? `${page.value.title} | Stopinja.si` : 'Stopinja.si',
